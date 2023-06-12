@@ -34,6 +34,7 @@ jobs:
           BASE_URL: ${{ github.event.repository.name }}
           VITE_FACE_API_KEY: ${{ secrets.VITE_FACE_API_KEY }}
           VITE_SPEECH_API_KEY: ${{ secrets.VITE_SPEECH_API_KEY }}
+          VITE_SPEECH_API_REGION: ${{ secrets.VITE_SPEECH_API_REGION }}
           VITE_IMAGE_API_URL: ${{secrets.VITE_IMAGE_API_URL}}
           VITE_FACE_API_ENDPOINT: ${{secrets.VITE_FACE_API_ENDPOINT}}
           VITE_VISION_API_ENDPOINT: ${{secrets.VITE_VISION_API_ENDPOINT}}

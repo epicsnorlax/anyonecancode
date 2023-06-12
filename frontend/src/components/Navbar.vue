@@ -38,6 +38,7 @@ import {
   faceApiKey,
   faceApiEndpoint,
   speechApiKey,
+  speechApiRegion,
   visionApiKey,
 } from "../settings";
 
@@ -50,7 +51,7 @@ export default class Navbar extends Vue {
     return faceApiKey !== "" && faceApiEndpoint !== "";
   }
   get showSpeechButton(): boolean {
-    return speechApiKey !== "";
+    return speechApiKey !== "" && speechApiRegion !== "";
   }
   get showVisionButton(): boolean {
     return visionApiKey !== "";
